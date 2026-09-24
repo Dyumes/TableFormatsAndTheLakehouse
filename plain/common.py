@@ -11,11 +11,13 @@
 
 #Quick note on arrow: Arrow is just use for parquet reading/writing, 
 #could have used pandas but Pyarrow is behind pandas too.
+from pathlib import Path
 import pyarrow as pa
 import pyarrow.parquet as pq
 
 DATA_DIR = "data"
-FOLDER = f"{DATA_DIR}/plain"
+ROOT = Path(__file__).resolve().parent.parent
+FOLDER = f"{ROOT}/{DATA_DIR}/plain"
 
 
 
