@@ -1,0 +1,3 @@
+pyarrow
+pandas
+pyiceberg[sql-sqlite, pyarrow]

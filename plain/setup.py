@@ -11,7 +11,7 @@
 
 import os
 import shutil
-from common import DAYS, FOLDER, FILES_PER_DAY, ROWS_PER_FILE, DELAY, write_file
+from TableFormatsAndTheLakehouse.plain.common import DAYS, FOLDER, FILES_PER_DAY, ROWS_PER_FILE, DELAY, write_file
 
 #Clean up the folder
 shutil.rmtree(FOLDER, ignore_errors=True)
