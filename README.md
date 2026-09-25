@@ -33,7 +33,14 @@ Day 1 is 10 Parquet files. A writer appends day 2 as 10 more files, one at a tim
 
  Add a `currency` column and appends a day that has it. No old file i rewritten. `iceberg/reader.py` is the run again, unchanged -> the query written before the change still works because Iceberg tracks coluns by id, not my name or position.
 
- 
+## Tests
+```
+pytest -v
+```
+## License
+
+MIT, see LICENSE
+
 
  
 
