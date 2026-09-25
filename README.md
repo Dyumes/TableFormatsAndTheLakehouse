@@ -14,6 +14,8 @@ python run_demo.py
 
 Run from the root of the repository.The demo takes about 20 secondand writes everything in `data/`.
 
+A not-one-line command way to run it is by using two terminals and running the reader and writer.
+
 ## What it shows
 
 **Part 1, plain folder**
@@ -27,7 +29,13 @@ Day 1 is 10 Parquet files. A writer appends day 2 as 10 more files, one at a tim
 
  `inspect_table.py` then follows the path a reader takes: cataog -> metadata file -> snapshots -> manifest lists -> manifests -> data files. It also writes a copy of the current metadata file in `data/iceberg/pretty` (indented version).
 
- **Part 3, schema change (`iceberg/evolve.py`)
+ **Part 3, schema change (`iceberg/evolve.py`)**
+
+ Add a `currency` column and appends a day that has it. No old file i rewritten. `iceberg/reader.py` is the run again, unchanged -> the query written before the change still works because Iceberg tracks coluns by id, not my name or position.
+
+ 
+
+ 
 
 
 

@@ -12,7 +12,7 @@
 import glob
 import pandas as pd
 import os
-from common import FOLDER, FILES_PER_DAY
+from TableFormatsAndTheLakehouse.plain.common import FOLDER, FILES_PER_DAY
 
 #For now, no table format: listing the folder is the only way 
 #to find the data
