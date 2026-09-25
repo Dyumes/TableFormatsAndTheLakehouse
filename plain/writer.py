@@ -12,7 +12,7 @@
 import glob
 import os
 import time
-from TableFormatsAndTheLakehouse.plain.common import FOLDER, FILES_PER_DAY, DELAY, write_file
+from common import FOLDER, FILES_PER_DAY, DELAY, write_file
 
 
 filter = glob.glob(f"{FOLDER}/day*_part*.parquet")
